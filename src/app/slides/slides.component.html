@@ -1,0 +1,102 @@
+<table class="table">
+    <tr>
+        <th style="background-color: skyblue;">
+            {{'hypothesis' | translate}}
+        </th>
+        <th colspan="3" style="background-color: pink;">
+            {{ 'goals'| translate}}
+        </th>
+    </tr>
+    <tr>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="H1Controller">
+                <small>{{'h1'| translate}}</small>
+                <ngx-slider [(value)]="sliderH1.value"[options]="sliderH1.options"  (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M1Controller">
+                <small>{{'m1'| translate}}</small>
+                <ngx-slider [(value)]="sliderM1.value" [options]="sliderM1.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M2Controller">
+                <small>{{'m2'| translate}}</small>
+                <ngx-slider [(value)]="sliderM2.value" [options]="sliderM2.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M3Controller">
+                <small>{{'m3'| translate}}</small>
+                <ngx-slider [(value)]="sliderM3.value" [options]="sliderM3.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="H2Controller">
+                <small>{{'h2'| translate}}</small>
+                <ngx-slider [(value)]="sliderH2.value" [options]="sliderH2.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M4Controller">
+                <small>{{'m4'| translate}}</small>
+                <ngx-slider [(value)]="sliderM4.value" [options]="sliderM4.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M5Controller">
+                <small>{{'m5'| translate}}</small>
+                <ngx-slider [(value)]="sliderM5.value" [options]="sliderM5.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M6Controller">
+                <small>{{'m6'| translate}}</small>
+                <ngx-slider [(value)]="sliderM6.value" [options]="sliderM6.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="H3Controller">
+                <small>{{'h3'| translate}}</small>
+                <ngx-slider [(value)]="sliderH3.value" [options]="sliderH3.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M7Controller">
+                <small>{{'m7'| translate}}</small>
+                <ngx-slider [(value)]="sliderM7.value" [options]="sliderM7.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M8Controller">
+                <small>{{'m8'| translate}}</small>
+                <ngx-slider [(value)]="sliderM8.value" [options]="sliderM8.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+        <td>
+            <div class="custom-ngx-slider" ng-controller="M9Controller">
+                <small>{{'m9'| translate}}</small>
+                <ngx-slider [(value)]="sliderM9.value" [options]="sliderM9.options" (valueChange)="sliderEvent()">
+                </ngx-slider>
+            </div>
+        </td>
+    </tr>
+</table>

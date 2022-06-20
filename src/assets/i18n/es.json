@@ -1,0 +1,80 @@
+{
+    "hypothesis": "Hipótesis",
+    "goals": "Metas",
+    "home" : "Nombre aplicación",
+    "language" : "Idioma",
+    "pib" : "PIB",
+    "temperature" : "Temperatura",
+    "year" : "Año",
+    "h1" : "Disponibilidad de recursos energéticos no-renovables hasta el año 2050",
+    "h2": "Impactos producidos por el cambio climático en la economía global",
+    "h3": "Evolución de la población ",
+    "m1": "Evolución planeada del Producto Interno Bruto per capita",
+    "m2": "Programa global de reforestación para capturar carbono desde el año 2020 ",
+    "m3": "Energía nuclear",
+    "m4": "Producción planeada de energía renovable ",
+    "m5": "Producción planeada de biocombustibles líquidos ",
+    "m6": "Transporte terrestre",
+    "m7": "Tendencia en la evolución de la eficiencia energética",
+    "m8": "Tasas de reciclado de minerales necesarios para la transición energética hacia un mayor uso de renovables",
+    "m9": "Emisiones de gases de efecto invernadero no dependientes del consumo energético", 
+
+    "aH1": "Media                                                                                ",
+    "bH1": "Alta                                                                                 ",
+    "cH1": "Ilimitada                                                                            ",
+
+    "aH2": "Ninguno                                                                               ",
+    "bH2": "Medios                                                                                ",
+    "cH2": "Alto                                                                                  ",
+
+
+    "aH3": "Menor crecimiento que el previsto por las tendencias históricas",
+    "bH3": "Continuación de las tendencias históricas                        ",
+    "cH3": "Mayor crecimiento que lo previsto en las tendencias históricas",
+    "dH3": "Limitar la población en 5.000 millones de personas para 2050",
+    "eH3": "Limitar la población en 7.000 millones de personas para 2050",
+
+    "aM1": "Menor crecimiento que el histórico                        ",
+    "bM1": "Continuación de las tendencias históricas                  ",
+    "cM1": "Mayor crecimiento que el histórico                           ",
+    "dM1": "Fijar el PIB per capita en 5.000$/persona/año para 2050",
+    "eM1": "Fijar el PIB per capita en 7.000$/persona/año para 2050 ",
+
+    "aM2": "No                                                                          ",
+    "bM2": "Sí                                                                           ",
+
+    "aM3": "Disminución de la capacidad instalada                            ",
+    "bM3": "Mantener constante la capacidad actual                             ",
+    "cM3": "Aumento de la capacidad instalada                               ",
+
+    "aM4": "Menor crecimiento que las tendencias históricas                   ",
+    "bM4": "Continuación de las tendencias históricas                          ",
+    "cM4": "Mayor crecimiento que las tendencias históricas                 ",
+
+    "aM5": "Producción constante en los niveles actuales                     ",
+    "bM5": "Continuar crecimiento históricoedios                             ",
+    "cM5": "Mayor crecimiento que la tendencia histórica                       ",
+
+    "aM6": "Continuación de la dependencia del petróleo                        ",
+    "bM6": "Transición a vehículos a gas y eléctricos                         ",
+
+    "aM7": "Menor crecimiento que las tendencias históricas                     ",
+    "bM7": "Continuar la tendencia de mejora históricas                          ",
+    "cM7": "Mayor crecimiento que la tendencia histórica                          ",
+
+    "aM8": "Mantener constantes los porcentajes actuales                           ",
+    "bM8": "Mejorar los porcentajes actuales                                      ",
+
+    "aM9": "Reducción respecto a la tendencia actual                               ",
+    "bM9": "Continuación de la tendencia actual                                   ",
+    "cM9": "Aumento respecto a la tendencia actual                                 "
+
+
+
+
+
+
+
+
+}
+

@@ -1,0 +1,13 @@
+table{
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    padding: 10px;
+}
+table tr {
+    width: 100%;
+    font-size: 20px;
+}
+table td, th{
+    align-items: center;
+}

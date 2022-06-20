@@ -1,0 +1,72 @@
+{
+"hypothesis" : "Hypothesis", 
+"goals": "Goals",
+"home" : "Application name", 
+"language" : "Language",
+"pib" : "PIB",
+"temperature" : "Temperature",
+"year": "Year",
+"h1" : "Availability of non-renewable energy resources until the year 2050",
+"h2": "Impacts produced by climate change on the global economy",
+"h3": "Evolution of the population",
+"m1": "Planned evolution of the Gross Domestic Product per capita",
+"m2": "Global reforestation program to capture carbon from 2020",
+"m3": "Nuclear energy",
+"m4": "Planned production of renewable energy",
+"m5": "Planned production of liquid biofuels",
+"m6": "Ground transportation",
+"m7": "Trend in the evolution of energy efficiency ",
+"m8": "Mineral recycling rates necessary for the energy transition towards greater use of renewables",
+"m9": "Greenhouse gas emissions not dependent on energy consumption",
+
+"aH1": "Average                                                               ",
+"bH1": "High                                                                   ",
+"cH1": "Unlimited                                                                ",
+
+"aH2": "None                                                                      ",
+"bH2": "Medium                                                                    ",
+"cH2": "High                                                                       ",
+
+
+"aH3":"Lower growth than predicted by historical trends",
+"bH3": "Continuation of historical trends               ",
+"cH3": "Higher growth than expected in historical trends",
+"dH3": "Limit the world population to 5 billion people by 2050",
+"eH3": "Limit the world population to 7 billion people by 2050.",
+
+"aM1": "Less growth than the historical                  ",
+"bM1": "Continuation of historical trends                ",
+ "cM1": "Higher growth than historical                    ",
+ "dM1": "Set GDP per capita at $5,000/person/year by 2050 ",
+ "eM1": "Set GDP per capita at $7,000/person/year by 2050 ",
+
+    "aM2": "No                                                                  ",
+    "bM2": "Yes                                                                 ",
+
+    "aM3": "Decrease in installed capacity                 ",
+    "bM3": "Keep current capacity constant                 ",
+    "cM3": "Increase in installed capacity                 ",
+
+    "aM4": "Less growth than historical trends             ",
+    "bM4": "Continuation of historical trends              ",
+    "cM4": "Higher growth than historical trends            ",
+
+    "aM5": "Constant production at current levels           ",
+    "bM5": "Continue historical growth media                ",
+    "cM5": "Higher growth than historical trend              ",
+
+    "aM6": "Continuation of dependence on oil                  ",
+    "bM6": "Transition to gas and electric vehicles             ",
+
+    "aM7": "Less growth than historical trends                  ",
+    "bM7": "Continue the historical improvement trend           ",
+    "cM7": "Higher growth than the historical trend             ",
+
+    "aM8": "Keep current percentages constant                   ",
+    "bM8": "Improve current percentages                          ",
+
+    "aM9": "Reduction from current trend                           ",
+    "bM9": "Continuation of the current trend                       ",
+    "cM9": "Increase from current trend                            "
+
+}
