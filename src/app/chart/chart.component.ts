@@ -40,15 +40,15 @@ export class ChartComponent {
     this.initialLoad();
 
     this.serv.updated.subscribe((index: String) => {
-      console.log(index)
-      this.http.get("http://localhost:8080/datosRegPIB/"+index, { responseType: 'json' }).subscribe((resp: any) => {
+      
+      this.http.get("http://localhost:8080/datosExtrPIB/"+index, { responseType: 'json' }).subscribe((resp: any) => {
       this.datosPIB = resp;
     },
       (error: any) => {
         console.log(error)
       }
     )
-      this.http.get("http://localhost:8080/datosRegTemp/"+index, { responseType: 'json' }).subscribe((resp: any) => {
+      this.http.get("http://localhost:8080/datosExtrTemp/"+index, { responseType: 'json' }).subscribe((resp: any) => {
         this.datosTemp = resp;
       },
         (error: any) => {
@@ -76,8 +76,7 @@ export class ChartComponent {
 
     this.http.get(url, { responseType: 'json' }).subscribe((resp: any) => {
       this.datosPIB = resp;
-      console.log("resp");
-      console.log(resp);
+      
     },
       (error: any) => {
         console.log(error)

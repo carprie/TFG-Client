@@ -5,6 +5,8 @@ import { faUndo, faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-i
 import { ActivatedRoute, Router } from '@angular/router';
 import { ChangeSliderService } from './services/SliderService/change-slider.service';
 import { LanguageSliderService } from './services/LanguageService/language-slider.service';
+import { Title } from '@angular/platform-browser';
+
 
 
 @Component({
@@ -17,7 +19,7 @@ export class AppComponent {
   faArrowRight = faArrowRight;
   faArrowLeft = faArrowLeft;
   sliderContinuous= true; 
-  title= "frontend";
+  title= "ExtrapolApp";
 
   translate: TranslateService;
   constructor(private http: HttpClient,
@@ -25,9 +27,10 @@ export class AppComponent {
      private router: Router,
      private route: ActivatedRoute,
      private serv: ChangeSliderService,
-     private lanServ: LanguageSliderService
+     private lanServ: LanguageSliderService, 
+     private titulo: Title 
      ) { 
-
+      titulo.setTitle("Sistema de visualización");
       this.translate=translate;
     // this language will be used as a fallback when a translation isn't found in the current language
     this.translate.setDefaultLang('es');
@@ -36,7 +39,7 @@ export class AppComponent {
    translate.use('es');
 
    translate.onLangChange.subscribe((change) => {
-    console.log('langChange', change);
+    //console.log('langChange', change);
     })
   };
 
@@ -50,14 +53,12 @@ export class AppComponent {
     if (this.translate.getDefaultLang()=='en'){
       this.translate.use('es');
       this.translate.setDefaultLang('es');
-      this.lanServ.update(true);
-      console.log("Entra idioma es servicio true " );
+      this.lanServ.update('es');
     } 
     else{
       this.translate.use('en');
       this.translate.setDefaultLang('en');
-      this.lanServ.update(false);
-      console.log("Entra idioma en servicio false");
+      this.lanServ.update('en');
     }
   }
   reset(){

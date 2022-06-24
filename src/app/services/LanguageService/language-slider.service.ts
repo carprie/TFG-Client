@@ -6,14 +6,13 @@ import { Injectable,EventEmitter } from '@angular/core';
 })
 export class LanguageSliderService {
 
-  updated: EventEmitter<boolean>;
+  updated: EventEmitter<String>;
   constructor(private http: HttpClient) {
-    this.updated = new EventEmitter<boolean>();
+    this.updated = new EventEmitter<String>();
   }
 
-   update(v:boolean) {
-    console.log("Entra en servicio ");
-    console.log(v);
+   update(v:String) {
+    
     this.updated.emit(v);
   }
 }

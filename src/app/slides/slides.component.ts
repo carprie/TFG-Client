@@ -48,13 +48,10 @@ export class SlidesComponent implements OnInit {
       this.ngOnInit();
     })
 
-    this.lanServ.updated.subscribe((lan: boolean) => {
-      //this.lang=lan;
-      console.log("slider valor idioma ", lan);
-      if(lan){
+    this.lanServ.updated.subscribe((lan: String) => {
+      if(lan== 'es'){
       this.updateSlidersESP(this.step); 
     }else {
-      console.log("Entra slider valor idioma ENG ", lan);
       this.updateSlidersENG(this.step); 
     }
       this.ngOnInit();
@@ -319,24 +316,15 @@ export class SlidesComponent implements OnInit {
     const newSliderH1: SliderDetails = {
       value: Math.round(this.sliderH1.value),
       highValue: 2,
-      options: this.sliderH1.options
-      // options: {
-      //   floor: 0,
-      //   ceil: 2,
-      //   //showTicks: true,
-      //   step: cont,
-      //   showSelectionBar: true,
-      //   showTicksValues: false,
-      //   translate: (value: number): string => {
-      //     switch (Math.round(value)) {
-      //       case 0: return this.gTranslate.getTranslation('aH1');
-      //       case 1: return this.gTranslate.getTranslation('bH1');
-      //       case 2: return this.gTranslate.getTranslation('cH1');
-      //       default: return ""
-      //     }
-      //   }
-      // }
-
+       options: {
+         floor: 0,
+         ceil: 2,
+         //showTicks: true,
+         step: cont,
+         showSelectionBar: true,
+         showTicksValues: false,
+        translate:this.sliderH1.options.translate
+       }
     }
     this.sliderH1 = newSliderH1;
 
@@ -345,25 +333,17 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderH2.value),
       highValue: 2,
-      options: this.sliderH2.options
-      // options: {
-      //   floor: 0,
-      //   ceil: 2,
-      //   //showTicks: true,
-      //   step: cont,
-      //   showSelectionBar: true,
-      //   showTicksValues: false,
-      //   translate: (value: number): string => {
-      //     switch (Math.round(value)) {
-      //       case 0: return this.gTranslate.getTranslation('aH2');
-      //       case 1: return this.gTranslate.getTranslation('bH2');
-      //       case 2: return this.gTranslate.getTranslation('cH2');
-      //       //case 3: return "d"
-      //       default: return ""
-      //     }
-      //   }
-      // }
-    }
+      options: {
+        floor: 0,
+        ceil: 2,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderH2.options.translate
+      }
+   }
+    
 
     this.sliderH2 = newsliderH2;
 
@@ -371,7 +351,16 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderH3.value),
       highValue: 4,
-      options: this.sliderH3.options
+      options: {
+        floor: 0,
+        ceil: 4,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderH3.options.translate
+      }
+   
     }
 
     this.sliderH3 = newsliderH3;
@@ -380,7 +369,16 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM1.value),
       highValue: 4,
-      options: this.sliderM1.options
+      options: {
+        floor: 0,
+        ceil: 4,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM1.options.translate
+      }
+   
     }
     this.sliderM1 = newsliderM1;
 
@@ -388,7 +386,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM2.value),
       highValue: 1,
-      options: this.sliderM2.options
+      options: {
+        floor: 0,
+        ceil: 1,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM2.options.translate
+      }
     }
 
     this.sliderM2 = newsliderM2;
@@ -397,7 +403,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM3.value),
       highValue: 2,
-      options: this.sliderM3.options
+      options: {
+        floor: 0,
+        ceil: 2,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM3.options.translate
+      }
     }
 
     this.sliderM3 = newsliderM3;
@@ -406,7 +420,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM4.value),
       highValue: 2,
-      options: this.sliderM4.options
+      options: {
+        floor: 0,
+        ceil: 2,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM4.options.translate
+      }
     }
 
     this.sliderM4 = newsliderM4;
@@ -415,7 +437,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM5.value),
       highValue: 2,
-      options: this.sliderM5.options
+      options: {
+        floor: 0,
+        ceil: 2,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM5.options.translate
+      }
     }
 
     this.sliderM5 = newsliderM5;
@@ -424,7 +454,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM6.value),
       highValue: 1,
-      options: this.sliderM6.options
+      options: {
+        floor: 0,
+        ceil: 1,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM6.options.translate
+      }
     }
 
     this.sliderM6 = newsliderM6;
@@ -434,7 +472,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM7.value),
       highValue: 2,
-      options: this.sliderM7.options
+      options: {
+        floor: 0,
+        ceil: 2,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM7.options.translate
+      }
     }
 
     this.sliderM7 = newsliderM7;
@@ -443,7 +489,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM8.value),
       highValue: 1,
-      options: this.sliderM8.options
+      options: {
+        floor: 0,
+        ceil: 1,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM8.options.translate
+      }
     }
 
     this.sliderM8 = newsliderM8;
@@ -453,7 +507,15 @@ export class SlidesComponent implements OnInit {
     {
       value: Math.round(this.sliderM9.value),
       highValue: 2,
-      options: this.sliderM9.options
+      options: {
+        floor: 0,
+        ceil: 2,
+        //showTicks: true,
+        step: cont,
+        showSelectionBar: true,
+        showTicksValues: false,
+       translate:this.sliderM9.options.translate
+      }
     }
 
     this.sliderM9 = newsliderM9;
@@ -746,7 +808,7 @@ export class SlidesComponent implements OnInit {
         showSelectionBar: true,
         showTicksValues: false,
         translate: (value: number): string => {
-          console.log(Math.round(value));
+          
           switch (Math.round(value)) {
             case 0:
              return "Average    "

@@ -1,8 +1,9 @@
 {
     "hypothesis": "Hipótesis",
-    "goals": "Metas",
-    "home" : "Nombre aplicación",
-    "language" : "Idioma",
+    "goals": "Medidas políticas",
+    "home" : "Sistema de visualización",
+    "language" : "Cambiar idioma",
+    "change" : "Cambiar continuidad",
     "pib" : "PIB",
     "temperature" : "Temperatura",
     "year" : "Año",
